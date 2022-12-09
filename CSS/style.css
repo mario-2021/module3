@@ -1,0 +1,81 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 1500px;
+}
+
+.titleName {
+    background-color: #ddd;
+    border: 2px solid #a7a7a7;
+    border-radius: 50px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px 0 #a7a7a7;
+}
+
+.shoppingList {
+    background-color: #ddd;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px 0 #a7a7a7;
+    border: 1px solid #a7a7a7;
+}
+
+.listName,
+.listName2 {
+    position: relative;
+}
+
+.listName::after {
+    content: '';
+    width: 17%;
+    position: absolute;
+    left: 17px;
+    bottom: 10px;
+    border-bottom: 3px solid #8d8b8b;
+}
+
+.listName2::after {
+    content: '';
+    width: 37%;
+    position: absolute;
+    left: 14px;
+    bottom: 10px;
+    border-bottom: 3px solid #8d8b8b;
+}
+
+ul li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid #afafaf;
+    border-radius: 15px;
+}
+
+.listBuy {
+    color: darkred;
+}
+
+button {
+    border: 1px solid #afafaf;
+    border-radius: 15px;
+    padding: 13px;
+    line-height: .5 !important;
+    color: darkred;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 0 #a7a7a7;
+}
+
+button:hover {
+    background-color: #ddd !important;
+    color: #000 !important;
+    box-shadow: 5px 5px 10px 0 #999898 !important;
+    border: 1px solid #999898 !important;
+}
+
+.emptyMessage {
+    color: darkred;
+}
